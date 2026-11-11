@@ -4,13 +4,22 @@
 
 [![Preview](preview/desktop.png)](https://a7aadly1987-hub.github.io/arabic-landing-page/)
 
+## النسخ المتاحة — Demos
+
+| النسخة | المعاينة |
+| --- | --- |
+| استوديو تصميم «نَسَق» — Design studio | [Live](https://a7aadly1987-hub.github.io/arabic-landing-page/) · `index.html` |
+| مكتب محاماة «ميزان» — Law office | [Live](https://a7aadly1987-hub.github.io/arabic-landing-page/law/) · `law/index.html` |
+
+[![Law office preview](preview/law.png)](https://a7aadly1987-hub.github.io/arabic-landing-page/law/)
+
 صفحة هبوط عربية (RTL) كاملة في ملف `index.html` واحد: بدون مكتبات، بدون خطوات بناء، وبدون صور خارجية. افتح الملف في المتصفح وسيعمل مباشرة.
 
 A complete Arabic (RTL) business landing page in a single `index.html`: no frameworks, no build step, no external images. Open the file and it works.
 
-> **ملاحظة:** «نَسَق» اسم استوديو افتراضي للعرض فقط. الأرقام والشهادات وبيانات التواصل والمشاريع كلها محتوى تجريبي يُستبدل ببيانات صاحب الموقع.
+> **ملاحظة:** «نَسَق» و«ميزان» اسمان افتراضيان للعرض فقط. الأرقام والشهادات وبيانات التواصل والمشاريع كلها محتوى تجريبي يُستبدل ببيانات صاحب الموقع.
 >
-> **Note:** "Nasaq" is a fictional studio used for the demo. All numbers, testimonials, contact details and projects are placeholder content.
+> **Note:** "Nasaq" and "Mizan" are fictional businesses used for the demos. All numbers, testimonials, contact details and projects are placeholder content.
 
 ## المزايا — Features
 
