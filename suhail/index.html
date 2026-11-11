@@ -694,6 +694,8 @@ svg { display: block; flex-shrink: 0; }
 
   /* ---------- الظهور عند التمرير ---------- */
   var reveals = $$('.reveal'), counters = $$('.stat__num');
+  /* مع تقليل الحركة تظهر الأرقام النهائية مباشرة */
+  if (reduce) counters.forEach(function (el) { el.textContent = fmt(+el.dataset.target) + (el.dataset.suffix || ''); });
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('is-visible'); io.unobserve(en.target); } });
