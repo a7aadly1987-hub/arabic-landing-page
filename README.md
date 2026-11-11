@@ -2,6 +2,8 @@
 
 **[Live demo — المعاينة الحية](https://a7aadly1987-hub.github.io/arabic-landing-page/)**
 
+[![Preview](preview/desktop.png)](https://a7aadly1987-hub.github.io/arabic-landing-page/)
+
 صفحة هبوط عربية (RTL) كاملة في ملف `index.html` واحد: بدون مكتبات، بدون خطوات بناء، وبدون صور خارجية. افتح الملف في المتصفح وسيعمل مباشرة.
 
 A complete Arabic (RTL) business landing page in a single `index.html`: no frameworks, no build step, no external images. Open the file and it works.
