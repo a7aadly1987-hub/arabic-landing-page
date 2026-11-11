@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- ===== SEO: عدّل العنوان والوصف هنا ===== -->
+<title>سُهيل | ليالي تخييم ورصد نجوم في الصحراء</title>
+<meta name="description" content="سُهيل: مخيمات صحراوية بعيدة عن أضواء المدن، مع مرشد فلكي وتلسكوبات وعشاء على النار. احجز ليلتك تحت سماء مليئة بالنجوم.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:title" content="سُهيل | ليالي تخييم ورصد نجوم في الصحراء">
+<meta property="og:description" content="ليلة تحت سماء لم ترها من قبل: تخييم صحراوي ورصد نجوم مع مرشد فلكي.">
+<meta property="og:url" content="https://a7aadly1987-hub.github.io/arabic-landing-page/suhail/">
+<meta property="og:image" content="https://a7aadly1987-hub.github.io/arabic-landing-page/preview/suhail.png">
+<meta property="og:image:width" content="1440">
+<meta property="og:image:height" content="900">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#070b1a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23070b1a'/%3E%3Cpath d='M32 10l5 17 17 5-17 5-5 17-5-17-17-5 17-5z' fill='%23f4b860'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500;600;700&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+
+<script>if ('IntersectionObserver' in window) document.documentElement.classList.add('js');</script>
+
+<style>
+/* =====================================================
+   الألوان والمتغيرات — عدّل الألوان من هنا
+   ===================================================== */
+:root {
+  --bg: #070b1a;
+  --bg-2: #0b1228;
+  --surface: rgba(255, 255, 255, .06);
+  --surface-strong: rgba(255, 255, 255, .1);
+  --line: rgba(255, 255, 255, .14);
+  --text: #eef1ff;
+  --muted: #aab3d4;
+  --gold: #f4b860;       /* اللون الأساسي (ذهبي دافئ) */
+  --gold-strong: #ffd08a;
+  --on-gold: #1c1204;
+  --aurora: #5eead4;     /* اللون الثانوي */
+  --violet: #8b7bff;
+  --radius: 22px;
+  --radius-sm: 14px;
+  --container: 1180px;
+  --header-h: 72px;
+  --display: 'El Messiri', 'Tajawal', system-ui, sans-serif;
+  --body: 'Tajawal', system-ui, -apple-system, 'Segoe UI', Tahoma, sans-serif;
+}
+
+/* ===================== أساسيات ===================== */
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header-h) + 12px); }
+body { margin: 0; font-family: var(--body); font-size: 17px; line-height: 1.8; color: var(--text); background: var(--bg); overflow-x: clip; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, p { margin: 0; }
+h1, h2, h3 { font-family: var(--display); line-height: 1.35; text-wrap: balance; font-weight: 600; }
+a { color: inherit; text-decoration: none; }
+ul { margin: 0; padding: 0; list-style: none; }
+button, input, select { font: inherit; color: inherit; }
+svg { display: block; flex-shrink: 0; }
+:focus-visible { outline: 3px solid var(--aurora); outline-offset: 3px; border-radius: 8px; }
+.container { width: min(100% - 40px, var(--container)); margin-inline: auto; }
+.section { padding-block: clamp(70px, 10vw, 128px); position: relative; }
+.skip-link { position: absolute; inset-inline-start: 16px; top: -60px; z-index: 200; background: var(--gold); color: var(--on-gold); padding: 10px 18px; border-radius: 10px; font-weight: 700; }
+.skip-link:focus { top: 12px; }
+
+.eyebrow { display: inline-flex; align-items: center; gap: 8px; font-size: .88rem; font-weight: 700; color: var(--gold); letter-spacing: .02em; margin-bottom: 14px; }
+.eyebrow::before { content: ""; width: 26px; height: 1px; background: currentColor; }
+.section-head { max-width: 660px; margin-bottom: clamp(36px, 5vw, 60px); }
+.section-head--center { margin-inline: auto; text-align: center; }
+.section-head h2 { font-size: clamp(1.8rem, 3.8vw, 2.9rem); }
+.section-head p { color: var(--muted); margin-top: 12px; font-size: 1.06rem; }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 52px; padding: 0 28px; border-radius: 999px; border: 1px solid transparent; font-weight: 700; cursor: pointer; white-space: nowrap; transition: transform .25s, box-shadow .25s, background-color .25s, border-color .25s; }
+.btn:hover { transform: translateY(-2px); }
+.btn--gold { background: linear-gradient(135deg, var(--gold-strong), var(--gold)); color: var(--on-gold); box-shadow: 0 10px 40px rgba(244, 184, 96, .35); }
+.btn--gold:hover { box-shadow: 0 14px 50px rgba(244, 184, 96, .55); }
+.btn--glass { background: var(--surface); border-color: var(--line); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+.btn--glass:hover { background: var(--surface-strong); border-color: rgba(255,255,255,.3); }
+.btn--sm { min-height: 42px; padding: 0 20px; font-size: .95rem; }
+.btn--block { width: 100%; }
+
+.glass { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); }
+
+/* الظهور عند التمرير (يعمل فقط مع JavaScript) */
+.js .reveal { opacity: 0; transform: translateY(26px); transition: opacity .8s ease, transform .8s ease; transition-delay: var(--d, 0ms); }
+.js .reveal.is-visible { opacity: 1; transform: none; }
+
+/* ===================== 1) شريط التنقل ===================== */
+.header { position: fixed; inset: 0 0 auto 0; z-index: 100; height: var(--header-h); transition: background-color .3s, border-color .3s; border-bottom: 1px solid transparent; }
+.header.is-scrolled { background: rgba(7, 11, 26, .78); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom-color: var(--line); }
+.header__inner { height: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
+.logo { display: inline-flex; align-items: center; gap: 10px; font-family: var(--display); font-size: 1.6rem; font-weight: 700; }
+.logo svg { color: var(--gold); }
+.nav__list { display: flex; gap: 4px; }
+.nav__list a { display: block; padding: 8px 14px; border-radius: 999px; color: var(--muted); font-weight: 500; white-space: nowrap; transition: color .2s, background-color .2s; }
+.nav__list a:hover { color: var(--text); background: var(--surface); }
+.header__actions { display: flex; align-items: center; gap: 10px; }
+.menu-toggle { display: none; width: 44px; height: 44px; place-items: center; border-radius: 12px; border: 1px solid var(--line); background: var(--surface); cursor: pointer; }
+.menu-toggle .close { display: none; }
+.menu-toggle[aria-expanded="true"] .close { display: block; }
+.menu-toggle[aria-expanded="true"] .bars { display: none; }
+@media (max-width: 920px) {
+  .menu-toggle { display: grid; }
+  .header__cta { display: none; }
+  .nav { position: absolute; top: var(--header-h); inset-inline: 0; background: rgba(7, 11, 26, .96); border-bottom: 1px solid var(--line); padding: 12px 20px 20px; visibility: hidden; opacity: 0; transform: translateY(-8px); transition: opacity .25s, transform .25s, visibility .25s; }
+  .nav.is-open { visibility: visible; opacity: 1; transform: none; }
+  .nav__list { flex-direction: column; }
+  .nav__list a { padding: 12px 14px; font-size: 1.05rem; }
+}
+
+/* ===================== 2) القسم الرئيسي: السماء ===================== */
+.hero { position: relative; min-height: min(100vh, 1100px); min-height: min(100svh, 1100px); display: flex; align-items: center; padding: calc(var(--header-h) + 40px) 0 clamp(150px, 20vw, 240px); overflow: hidden; isolation: isolate;
+  background: radial-gradient(1200px 700px at 80% -10%, #1b2560 0%, transparent 60%), linear-gradient(180deg, #050816 0%, #0a1030 55%, #141a3f 100%); }
+.sky { position: absolute; inset: 0; width: 100%; height: 100%; z-index: -4; }
+.aurora { position: absolute; z-index: -3; border-radius: 50%; filter: blur(70px); opacity: .5; pointer-events: none; }
+.aurora--a { width: 60vw; height: 26vw; min-width: 420px; min-height: 200px; top: 8%; inset-inline-end: -10%; background: linear-gradient(90deg, var(--aurora), var(--violet)); animation: drift 16s ease-in-out infinite alternate; }
+.aurora--b { width: 40vw; height: 20vw; min-width: 320px; min-height: 160px; top: 30%; inset-inline-start: -8%; background: linear-gradient(90deg, var(--violet), #2a6fdb); opacity: .32; animation: drift 20s ease-in-out -6s infinite alternate-reverse; }
+@keyframes drift { from { transform: translate3d(0, 0, 0) rotate(-6deg) scale(1); } to { transform: translate3d(-6%, 8%, 0) rotate(5deg) scale(1.15); } }
+.moon { position: absolute; z-index: -2; top: 10%; left: 43%; width: clamp(72px, 9vw, 130px); aspect-ratio: 1; border-radius: 50%;
+  background: radial-gradient(circle at 34% 32%, #fffaf0 0%, #f6dfb0 55%, #d8b678 100%);
+  box-shadow: 0 0 60px 10px rgba(244, 184, 96, .35), 0 0 160px 40px rgba(244, 184, 96, .18); }
+.moon::before, .moon::after { content: ""; position: absolute; border-radius: 50%; background: rgba(160, 120, 60, .22); }
+.moon::before { width: 22%; height: 22%; top: 24%; left: 52%; }
+.moon::after { width: 14%; height: 14%; top: 58%; left: 30%; }
+.dunes { position: absolute; inset: auto 0 -2px 0; z-index: -1; height: clamp(170px, 24vw, 320px); pointer-events: none; }
+.dunes svg { position: absolute; inset: 0; width: 100%; height: 100%; will-change: transform; }
+.tent { position: absolute; bottom: 21%; inset-inline-start: 22%; width: clamp(40px, 5vw, 64px); z-index: 0; }
+.tent__glow { position: absolute; inset: -80% -90% -30%; background: radial-gradient(closest-side, rgba(244, 184, 96, .45), transparent); border-radius: 50%; animation: flicker 4s ease-in-out infinite; }
+@keyframes flicker { 0%, 100% { opacity: .75; } 45% { opacity: 1; } 60% { opacity: .82; } }
+
+.hero__inner { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(28px, 5vw, 72px); align-items: center; }
+.hero h1 { font-size: clamp(2.5rem, 6.4vw, 4.8rem); font-weight: 700; line-height: 1.25; text-shadow: 0 4px 40px rgba(5, 8, 22, .6); }
+.hero h1 em { font-style: normal; background: linear-gradient(100deg, var(--gold-strong), var(--gold) 40%, var(--aurora)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.hero__lead { margin-top: 20px; font-size: clamp(1.06rem, 1.7vw, 1.26rem); color: #cfd6f2; max-width: 50ch; }
+.hero__actions { margin-top: 34px; display: flex; flex-wrap: wrap; gap: 14px; }
+.hero__meta { margin-top: 34px; display: flex; flex-wrap: wrap; gap: 10px 26px; color: var(--muted); font-size: .96rem; }
+.hero__meta li { display: flex; align-items: center; gap: 8px; }
+.hero__meta svg { color: var(--gold); }
+
+/* البطاقة الزجاجية المائلة */
+.tilt { perspective: 1000px; }
+.ticket { padding: 26px; transform-style: preserve-3d; transition: transform .2s ease-out; box-shadow: 0 30px 80px rgba(0, 0, 0, .45), inset 0 1px 0 rgba(255, 255, 255, .18); position: relative; overflow: hidden; }
+.ticket::before { content: ""; position: absolute; inset: 0; background: radial-gradient(420px circle at var(--mx, 70%) var(--my, 0%), rgba(255, 255, 255, .16), transparent 60%); pointer-events: none; }
+.ticket__top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.pill { font-size: .8rem; font-weight: 700; padding: 4px 12px; border-radius: 999px; background: rgba(94, 234, 212, .14); color: var(--aurora); border: 1px solid rgba(94, 234, 212, .3); }
+.ticket h2 { font-size: 1.7rem; margin-top: 16px; }
+.ticket__sub { color: var(--muted); font-size: .96rem; }
+.ticket__rows { margin-top: 20px; border-top: 1px dashed var(--line); }
+.ticket__rows li { display: flex; justify-content: space-between; gap: 16px; padding: 12px 0; border-bottom: 1px dashed var(--line); font-size: .98rem; }
+.ticket__rows span { color: var(--muted); }
+.ticket__price { display: flex; align-items: baseline; justify-content: space-between; margin: 20px 0 18px; }
+.ticket__price strong { font-family: var(--display); font-size: 2rem; color: var(--gold-strong); }
+.ticket__price small { color: var(--muted); }
+
+.scroll-hint { position: absolute; bottom: 22px; left: 50%; transform: translateX(-50%); width: 26px; height: 42px; border: 2px solid rgba(255,255,255,.4); border-radius: 14px; z-index: 1; }
+.scroll-hint::after { content: ""; position: absolute; top: 7px; left: 50%; width: 4px; height: 8px; margin-left: -2px; border-radius: 2px; background: var(--gold); animation: wheel 1.8s ease-in-out infinite; }
+@keyframes wheel { 0% { transform: translateY(0); opacity: 1; } 100% { transform: translateY(14px); opacity: 0; } }
+
+@media (max-width: 900px) {
+  .hero__inner { grid-template-columns: 1fr; }
+  .tilt { max-width: 440px; width: 100%; margin-inline: auto; }
+  .moon { top: 84px; left: 7%; width: 60px; }
+  .scroll-hint { display: none; }
+}
+
+/* ===================== 3) الأرقام ===================== */
+.stats { margin-top: -70px; position: relative; z-index: 2; }
+.stats__grid { display: grid; grid-template-columns: repeat(4, 1fr); padding: 10px; }
+.stat { padding: 22px 18px; text-align: center; border-inline-start: 1px solid var(--line); }
+.stat:first-child { border-inline-start: 0; }
+.stat__num { font-family: var(--display); font-size: clamp(1.9rem, 3.6vw, 2.7rem); font-weight: 700; color: var(--gold-strong); line-height: 1.2; direction: ltr; font-variant-numeric: tabular-nums; }
+.stat__label { color: var(--muted); font-size: .95rem; }
+@media (max-width: 700px) { .stats__grid { grid-template-columns: 1fr 1fr; } .stat:nth-child(3) { border-inline-start: 0; } .stat:nth-child(n+3) { border-top: 1px solid var(--line); } }
+
+/* ===================== 4) الرحلات ===================== */
+.grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+@media (max-width: 980px) { .grid-3 { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .grid-3 { grid-template-columns: 1fr; } }
+.trip { overflow: hidden; display: flex; flex-direction: column; transition: transform .35s, border-color .35s, box-shadow .35s; }
+.trip:hover { transform: translateY(-8px); border-color: rgba(244, 184, 96, .5); box-shadow: 0 24px 60px rgba(0, 0, 0, .4); }
+.trip__art { aspect-ratio: 16 / 10; overflow: hidden; }
+.trip__art svg { width: 100%; height: 100%; transition: transform .8s ease; }
+.trip:hover .trip__art svg { transform: scale(1.07); }
+.trip__body { padding: 22px 24px 26px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
+.trip__body h3 { font-size: 1.4rem; }
+.trip__body p { color: var(--muted); font-size: 1rem; }
+.trip__list { display: grid; gap: 6px; font-size: .96rem; }
+.trip__list li { display: flex; gap: 8px; align-items: center; }
+.trip__list svg { color: var(--aurora); }
+.trip__foot { margin-top: auto; padding-top: 16px; border-top: 1px solid var(--line); display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.trip__foot strong { font-family: var(--display); font-size: 1.3rem; color: var(--gold-strong); }
+.trip__foot small { color: var(--muted); display: block; line-height: 1.3; }
+
+/* ===================== 5) ليلتك معنا (خط زمني + كوكبة) ===================== */
+.night { background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 50%, var(--bg) 100%); }
+.night__grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(28px, 5vw, 72px); align-items: center; }
+@media (max-width: 880px) { .night__grid { grid-template-columns: 1fr; } }
+.const { width: 100%; max-width: 440px; margin-inline: auto; }
+.const path { stroke-dasharray: 1400; stroke-dashoffset: 1400; transition: stroke-dashoffset 3s ease .3s; }
+.is-visible .const path, html:not(.js) .const path { stroke-dashoffset: 0; }
+.const circle { animation: twinkle 3s ease-in-out infinite; transform-origin: center; transform-box: fill-box; }
+.const circle:nth-of-type(2n) { animation-delay: -1.2s; } .const circle:nth-of-type(3n) { animation-delay: -2.1s; }
+@keyframes twinkle { 50% { opacity: .45; transform: scale(.8); } }
+.timeline { display: grid; gap: 6px; position: relative; }
+.timeline::before { content: ""; position: absolute; inset-block: 14px; inset-inline-start: 13px; width: 2px; background: linear-gradient(180deg, var(--gold), var(--violet), var(--aurora)); opacity: .6; }
+.step { position: relative; padding: 14px 0 14px; padding-inline-start: 52px; }
+.step::before { content: ""; position: absolute; inset-inline-start: 4px; top: 22px; width: 20px; height: 20px; border-radius: 50%; background: var(--bg); border: 2px solid var(--gold); box-shadow: 0 0 0 5px rgba(244, 184, 96, .12); }
+.step time { font-size: .88rem; font-weight: 700; color: var(--gold); }
+.step h3 { font-size: 1.25rem; }
+.step p { color: var(--muted); font-size: 1rem; }
+
+/* ===================== 6) الأسئلة الشائعة ===================== */
+.faq { max-width: 800px; margin-inline: auto; display: grid; gap: 12px; }
+.faq__item { border-radius: var(--radius-sm); overflow: hidden; transition: border-color .3s; }
+.faq__item.is-open { border-color: rgba(244, 184, 96, .5); }
+.faq__item h3 { font-family: var(--body); font-size: 1rem; }
+.faq__q { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 22px; background: none; border: 0; cursor: pointer; text-align: start; font-weight: 700; font-size: 1.06rem; }
+.faq__q svg { color: var(--gold); transition: transform .3s; }
+.faq__item.is-open .faq__q svg { transform: rotate(45deg); }
+.faq__a { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .35s ease; }
+.faq__item.is-open .faq__a { grid-template-rows: 1fr; }
+.faq__a > div { overflow: hidden; }
+.faq__a p { padding: 0 22px 20px; color: var(--muted); }
+
+/* ===================== 7) الحجز ===================== */
+.book__box { padding: clamp(24px, 4vw, 48px); display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px, 4vw, 56px); align-items: center; position: relative; overflow: hidden; }
+.book__box::before { content: ""; position: absolute; width: 520px; height: 520px; border-radius: 50%; background: radial-gradient(closest-side, rgba(139, 123, 255, .28), transparent); top: -220px; inset-inline-end: -160px; pointer-events: none; }
+@media (max-width: 860px) { .book__box { grid-template-columns: 1fr; } }
+.book h2 { font-size: clamp(1.8rem, 3.6vw, 2.7rem); }
+.book p { color: var(--muted); margin-top: 12px; }
+.book__contact { margin-top: 22px; display: grid; gap: 10px; }
+.book__contact a { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; }
+.book__contact a:hover { color: var(--gold-strong); }
+.book__contact svg { color: var(--gold); }
+.ltr { direction: ltr; unicode-bidi: embed; display: inline-block; }
+.form { position: relative; }
+.field { margin-bottom: 16px; }
+.field label { display: block; font-weight: 700; margin-bottom: 6px; font-size: .96rem; }
+.field input, .field select { width: 100%; padding: 13px 16px; border-radius: var(--radius-sm); border: 1px solid var(--line); background: rgba(5, 8, 22, .55); transition: border-color .2s, box-shadow .2s; }
+.field select option { background: #0b1228; color: var(--text); }
+.field input:focus, .field select:focus { outline: none; border-color: var(--gold); box-shadow: 0 0 0 4px rgba(244, 184, 96, .18); }
+.field.has-error input, .field.has-error select { border-color: #f87171; }
+.field__error { display: none; color: #fca5a5; font-size: .88rem; margin-top: 6px; }
+.field.has-error .field__error { display: block; }
+.form__success { display: none; align-items: center; gap: 12px; margin-top: 16px; padding: 14px 18px; border-radius: var(--radius-sm); background: rgba(94, 234, 212, .12); border: 1px solid rgba(94, 234, 212, .35); color: var(--aurora); font-weight: 700; }
+.form__success.is-shown { display: flex; }
+
+/* ===================== 8) التذييل ===================== */
+.footer { border-top: 1px solid var(--line); padding-top: 56px; background: #050816; }
+.footer__grid { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 40px; padding-bottom: 44px; }
+@media (max-width: 760px) { .footer__grid { grid-template-columns: 1fr; gap: 30px; } }
+.footer p { color: var(--muted); margin-top: 12px; max-width: 38ch; font-size: .98rem; }
+.footer h3 { font-family: var(--body); font-weight: 700; font-size: 1.05rem; margin-bottom: 14px; }
+.footer__links { display: grid; gap: 8px; }
+.footer__links a { color: var(--muted); transition: color .2s; }
+.footer__links a:hover { color: var(--gold-strong); }
+.social { display: flex; gap: 10px; flex-wrap: wrap; }
+.social a { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 12px; background: var(--surface); border: 1px solid var(--line); transition: background-color .2s, color .2s, transform .2s; }
+.social a:hover { background: var(--gold); color: var(--on-gold); transform: translateY(-3px); }
+.footer__bottom { border-top: 1px solid var(--line); padding-block: 22px; color: var(--muted); font-size: .92rem; }
+.footer__bottom-inner { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; text-align: center; gap: 10px 28px; padding-inline: 64px; }
+.credit { display: inline-flex; align-items: center; gap: 8px; color: rgba(255,255,255,.85); font-size: .85rem; }
+.credit__pill { display: inline-flex; align-items: center; gap: 6px; padding: 5px 10px; border-radius: 999px; background: rgba(255,255,255,.08); transition: background-color .2s, transform .2s; }
+.credit__pill:hover { background: rgba(255,255,255,.16); transform: translateY(-1px); }
+.credit__pill img { display: block; height: 24px; width: auto; }
+@media (max-width: 560px) { .footer__bottom-inner { flex-direction: column; } }
+
+.to-top { position: fixed; bottom: 22px; inset-inline-end: 22px; z-index: 90; width: 50px; height: 50px; border-radius: 50%; border: 0; cursor: pointer; display: grid; place-items: center; background: var(--gold); color: var(--on-gold); box-shadow: 0 10px 30px rgba(0,0,0,.4); opacity: 0; visibility: hidden; transform: translateY(12px); transition: opacity .3s, transform .3s, visibility .3s; }
+.to-top.is-shown { opacity: 1; visibility: visible; transform: none; }
+
+/* احترام تفضيل تقليل الحركة */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition-duration: .01ms !important; }
+  .js .reveal { opacity: 1; transform: none; }
+  .const path { stroke-dashoffset: 0; }
+}
+</style>
+</head>
+
+<body>
+<a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+
+<!-- ===================== 1) شريط التنقل ===================== -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a class="logo" href="#home" aria-label="سُهيل — الصفحة الرئيسية">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2 7.500L21.500 12 14 14.500 12 22l-2-7.500L2.500 12 10 9.500z"/></svg>
+      <span>سُهيل</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="التنقل الرئيسي">
+      <ul class="nav__list">
+        <li><a href="#trips">الرحلات</a></li>
+        <li><a href="#night">ليلتك معنا</a></li>
+        <li><a href="#faq">الأسئلة</a></li>
+        <li><a href="#book">الحجز</a></li>
+      </ul>
+    </nav>
+    <div class="header__actions">
+      <a class="btn btn--gold btn--sm header__cta" href="#book">احجز ليلتك</a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav">
+        <svg class="bars" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        <svg class="close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ===================== 2) القسم الرئيسي: السماء ===================== -->
+<section class="hero" id="home">
+  <!-- طبقات المشهد: نجوم (canvas) + شفق + قمر + كثبان، كلها مرسومة بالكود -->
+  <canvas class="sky" id="sky" aria-hidden="true"></canvas>
+  <div class="aurora aurora--a" aria-hidden="true"></div>
+  <div class="aurora aurora--b" aria-hidden="true"></div>
+  <div class="moon" aria-hidden="true"></div>
+  <div class="dunes" aria-hidden="true">
+    <svg data-depth="0.10" viewBox="0 0 1440 320" preserveAspectRatio="none"><path d="M0 190 C 220 110 420 150 640 190 S 1040 120 1440 170 V320 H0z" fill="#1a2152"/></svg>
+    <svg data-depth="0.05" viewBox="0 0 1440 320" preserveAspectRatio="none"><path d="M0 240 C 260 170 520 250 780 215 S 1200 160 1440 225 V320 H0z" fill="#10163a"/></svg>
+    <div class="tent"><div class="tent__glow"></div><svg viewBox="0 0 64 44" style="position:relative"><path d="M32 2L4 44h56z" fill="#0a0f29"/><path d="M32 14l-9 30h18z" fill="#f4b860"/></svg></div>
+    <svg data-depth="0" viewBox="0 0 1440 320" preserveAspectRatio="none"><path d="M0 285 C 300 235 560 300 860 270 S 1260 240 1440 280 V320 H0z" fill="#070b1a"/></svg>
+  </div>
+
+  <div class="container hero__inner">
+    <div>
+      <span class="eyebrow reveal">تخييم صحراوي ورصد نجوم</span>
+      <h1 class="reveal" style="--d:100ms">ليلةٌ تحت <em>سماءٍ لم ترها</em> من قبل</h1>
+      <p class="hero__lead reveal" style="--d:200ms">مخيمات صحراوية بعيدة عن أضواء المدن، مع مرشد فلكي وتلسكوبات، وعشاء على النار.</p>
+      <div class="hero__actions reveal" style="--d:300ms">
+        <a class="btn btn--gold" href="#book">احجز ليلتك</a>
+        <a class="btn btn--glass" href="#trips">شاهد الرحلات</a>
+      </div>
+      <ul class="hero__meta reveal" style="--d:400ms">
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3 7 7 .6-5.300 4.700L18.300 21 12 17.300 5.700 21l1.600-6.700L2 9.600 9 9z"/></svg>تقييم 4.9 من ضيوفنا</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>مجموعات صغيرة</li>
+        <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>الانتقالات مشمولة</li>
+      </ul>
+    </div>
+
+    <div class="tilt reveal" style="--d:250ms">
+      <div class="ticket glass" id="ticket">
+        <div class="ticket__top"><span class="pill">الرحلة القادمة</span><svg width="22" height="22" viewBox="0 0 24 24" fill="#f4b860" aria-hidden="true"><path d="M12 2l2 7.500L21.500 12 14 14.500 12 22l-2-7.500L2.500 12 10 9.500z"/></svg></div>
+        <h2>ليلة الجبّار</h2>
+        <p class="ticket__sub">أوضح ليالي الشتاء لرصد كوكبة الجبّار</p>
+        <ul class="ticket__rows">
+          <li><span>الموعد</span><b>كل خميس وجمعة</b></li>
+          <li><span>المدة</span><b>ليلة واحدة</b></li>
+          <li><span>المجموعة</span><b>حتى 12 ضيفاً</b></li>
+        </ul>
+        <div class="ticket__price"><small>السعر للفرد</small><strong>1,450 ج.م</strong></div>
+        <a class="btn btn--gold btn--block" href="#book">احجز مكانك</a>
+      </div>
+    </div>
+  </div>
+  <span class="scroll-hint" aria-hidden="true"></span>
+</section>
+
+<!-- ===================== 3) الأرقام: عدّل data-target و data-suffix ===================== -->
+<section class="stats" aria-label="أرقام سُهيل">
+  <div class="container">
+    <div class="stats__grid glass reveal">
+      <div class="stat"><div class="stat__num" data-target="2400" data-suffix="+">0</div><div class="stat__label">ضيف خيّم معنا</div></div>
+      <div class="stat"><div class="stat__num" data-target="180" data-suffix="+">0</div><div class="stat__label">ليلة رصد</div></div>
+      <div class="stat"><div class="stat__num" data-target="3" data-suffix="">0</div><div class="stat__label">مواقع تخييم</div></div>
+      <div class="stat"><div class="stat__num" data-target="6" data-suffix="">0</div><div class="stat__label">تلسكوبات في كل رحلة</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 4) الرحلات ===================== -->
+<section class="section" id="trips">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
+      <span class="eyebrow">الرحلات</span>
+      <h2>اختر الليلة التي تناسبك</h2>
+      <p>ثلاث تجارب مختلفة، يجمعها الهدوء وسماء صافية بلا تلوث ضوئي.</p>
+    </div>
+    <div class="grid-3">
+      <article class="trip glass reveal">
+        <div class="trip__art"><svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" role="img" aria-label="رسم لكوكبة الجبّار فوق الكثبان"><defs><linearGradient id="t1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a1030"/><stop offset="1" stop-color="#2a2f7a"/></linearGradient></defs><rect width="400" height="250" fill="url(#t1)"/><path d="M150 50L250 70M250 70L215 120M150 50L180 115M180 115L215 120M180 115L165 185M215 120L255 180" stroke="#f4b860" stroke-width="1.5" opacity=".7"/><g fill="#fff"><circle cx="150" cy="50" r="4"/><circle cx="250" cy="70" r="3.500"/><circle cx="180" cy="115" r="3"/><circle cx="198" cy="118" r="3"/><circle cx="215" cy="120" r="3"/><circle cx="165" cy="185" r="3.500"/><circle cx="255" cy="180" r="4.500"/><circle cx="60" cy="40" r="1.500"/><circle cx="330" cy="30" r="1.500"/><circle cx="350" cy="120" r="1.200"/><circle cx="80" cy="140" r="1.200"/></g><path d="M0 215 C100 190 220 225 400 200 V250 H0z" fill="#070b1a"/></svg></div>
+        <div class="trip__body">
+          <h3>ليلة الجبّار</h3>
+          <p>ليلة واحدة لمن يجرّب الرصد لأول مرة.</p>
+          <ul class="trip__list">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>جولة نجوم مع مرشد فلكي</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>عشاء بدوي وإفطار</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>خيمة مجهزة لشخصين</li>
+          </ul>
+          <div class="trip__foot"><div><small>للفرد</small><strong>1,450 ج.م</strong></div><a class="btn btn--glass btn--sm" href="#book" data-trip="ليلة الجبّار">احجز</a></div>
+        </div>
+      </article>
+      <article class="trip glass reveal" style="--d:120ms">
+        <div class="trip__art"><svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" role="img" aria-label="رسم لدرب التبانة فوق مخيم"><defs><linearGradient id="t2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#150f3a"/><stop offset="1" stop-color="#0a2a4a"/></linearGradient><linearGradient id="mw" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#5eead4" stop-opacity="0"/><stop offset=".5" stop-color="#c9b8ff" stop-opacity=".55"/><stop offset="1" stop-color="#f4b860" stop-opacity="0"/></linearGradient></defs><rect width="400" height="250" fill="url(#t2)"/><path d="M-20 230 Q 180 120 420 10" stroke="url(#mw)" stroke-width="70" fill="none" stroke-linecap="round"/><g fill="#fff"><circle cx="90" cy="170" r="1.500"/><circle cx="140" cy="140" r="2"/><circle cx="200" cy="105" r="1.500"/><circle cx="250" cy="80" r="2.200"/><circle cx="310" cy="50" r="1.500"/><circle cx="60" cy="60" r="1.200"/><circle cx="340" cy="150" r="1.200"/><circle cx="170" cy="50" r="1"/></g><path d="M0 220 C120 195 260 230 400 205 V250 H0z" fill="#070b1a"/><path d="M290 212l14-22 14 22z" fill="#f4b860"/></svg></div>
+        <div class="trip__body">
+          <h3>درب التبّانة</h3>
+          <p>ليلتان في أبعد مواقعنا عن العمران.</p>
+          <ul class="trip__list">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>ورشة تصوير السماء ليلاً</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>جولة سفاري عند الغروب</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>كل الوجبات مشمولة</li>
+          </ul>
+          <div class="trip__foot"><div><small>للفرد</small><strong>3,200 ج.م</strong></div><a class="btn btn--glass btn--sm" href="#book" data-trip="درب التبّانة">احجز</a></div>
+        </div>
+      </article>
+      <article class="trip glass reveal" style="--d:240ms">
+        <div class="trip__art"><svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" role="img" aria-label="رسم لزخة شهب"><defs><linearGradient id="t3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#060a20"/><stop offset="1" stop-color="#3a1f5c"/></linearGradient><linearGradient id="sh" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff"/></linearGradient></defs><rect width="400" height="250" fill="url(#t3)"/><g stroke="url(#sh)" stroke-width="2.500" stroke-linecap="round"><path d="M330 30L250 90"/><path d="M220 20L160 65"/><path d="M370 100L310 145"/><path d="M150 90L105 124"/></g><g fill="#fff"><circle cx="60" cy="50" r="1.500"/><circle cx="280" cy="150" r="1.500"/><circle cx="200" cy="130" r="1.200"/><circle cx="350" cy="50" r="1.200"/></g><circle cx="70" cy="150" r="22" fill="#f6dfb0"/><circle cx="80" cy="144" r="20" fill="#1b1340"/><path d="M0 218 C140 195 250 228 400 208 V250 H0z" fill="#070b1a"/></svg></div>
+        <div class="trip__body">
+          <h3>ليلة الشهب</h3>
+          <p>رحلات موسمية في مواعيد زخّات الشهب.</p>
+          <ul class="trip__list">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>مراتب أرضية لمشاهدة السماء</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>مناسبة للعائلات والأطفال</li>
+            <li><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>مشروبات ساخنة طوال الليل</li>
+          </ul>
+          <div class="trip__foot"><div><small>للفرد</small><strong>1,900 ج.م</strong></div><a class="btn btn--glass btn--sm" href="#book" data-trip="ليلة الشهب">احجز</a></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 5) ليلتك معنا ===================== -->
+<section class="section night" id="night">
+  <div class="container night__grid">
+    <div class="reveal">
+      <!-- كوكبة تُرسم خطوطها عند الظهور -->
+      <svg class="const" viewBox="0 0 400 400" role="img" aria-label="رسم لكوكبة نجمية تتصل نجومها بخطوط">
+        <path d="M70 90 L170 60 L250 130 L330 100 M250 130 L230 220 L310 290 M230 220 L130 250 L90 340" fill="none" stroke="#f4b860" stroke-width="1.500" stroke-linecap="round" stroke-linejoin="round" opacity=".8"/>
+        <g fill="#fff"><circle cx="70" cy="90" r="5"/><circle cx="170" cy="60" r="4"/><circle cx="250" cy="130" r="6"/><circle cx="330" cy="100" r="4"/><circle cx="230" cy="220" r="5"/><circle cx="310" cy="290" r="4"/><circle cx="130" cy="250" r="4.500"/><circle cx="90" cy="340" r="5"/></g>
+        <g fill="#aab3d4"><circle cx="40" cy="200" r="1.500"/><circle cx="360" cy="200" r="1.500"/><circle cx="200" cy="350" r="1.500"/><circle cx="300" cy="40" r="1.500"/><circle cx="150" cy="150" r="1.200"/></g>
+      </svg>
+    </div>
+    <div>
+      <div class="section-head reveal" style="margin-bottom:28px">
+        <span class="eyebrow">ليلتك معنا</span>
+        <h2>من الغروب حتى الفجر</h2>
+      </div>
+      <div class="timeline">
+        <div class="step reveal"><time>5:30 م</time><h3>الوصول مع الغروب</h3><p>استقبال بالشاي على النار، واستلام خيمتك قبل حلول الظلام.</p></div>
+        <div class="step reveal" style="--d:100ms"><time>7:30 م</time><h3>عشاء على النار</h3><p>عشاء بدوي يُطهى أمامك، وجلسة تعارف حول النار.</p></div>
+        <div class="step reveal" style="--d:200ms"><time>9:00 م</time><h3>جولة النجوم</h3><p>المرشد الفلكي يعرّفك بالكوكبات، ثم دورك على التلسكوب.</p></div>
+        <div class="step reveal" style="--d:300ms"><time>6:00 ص</time><h3>شروق وإفطار</h3><p>شروق الشمس فوق الكثبان، وإفطار خفيف قبل العودة.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 6) الأسئلة الشائعة ===================== -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-head section-head--center reveal">
+      <span class="eyebrow">أسئلة شائعة</span>
+      <h2>قبل أن تحزم حقيبتك</h2>
+    </div>
+    <div class="faq">
+      <div class="faq__item glass is-open reveal">
+        <h3><button class="faq__q" type="button" aria-expanded="true" aria-controls="faq1" id="faq1-btn">ماذا لو كانت السماء غائمة؟<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button></h3>
+        <div class="faq__a" id="faq1" role="region" aria-labelledby="faq1-btn"><div><p>نتابع توقعات الطقس قبل كل رحلة. إذا كانت الرؤية غير مناسبة نبلغك قبلها بيوم، وتختار بين موعد بديل أو استرداد كامل المبلغ.</p></div></div>
+      </div>
+      <div class="faq__item glass reveal">
+        <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq2" id="faq2-btn">هل الرحلة مناسبة للأطفال؟<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button></h3>
+        <div class="faq__a" id="faq2" role="region" aria-labelledby="faq2-btn"><div><p>نعم، من سن ست سنوات بصحبة ذويهم. «ليلة الشهب» هي الأنسب للعائلات لأنها أقصر وأقل برودة.</p></div></div>
+      </div>
+      <div class="faq__item glass reveal">
+        <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq3" id="faq3-btn">ماذا أحضر معي؟<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button></h3>
+        <div class="faq__a" id="faq3" role="region" aria-labelledby="faq3-btn"><div><p>ملابس ثقيلة لليل، حذاء مريح، وزجاجة ماء. الخيام والأغطية والتلسكوبات نوفّرها نحن.</p></div></div>
+      </div>
+      <div class="faq__item glass reveal">
+        <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="faq4" id="faq4-btn">كيف نصل إلى المخيم؟<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></button></h3>
+        <div class="faq__a" id="faq4" role="region" aria-labelledby="faq4-btn"><div><p>الانتقالات مشمولة من نقطة تجمع في المدينة بسيارات دفع رباعي، ونعيدك إلى النقطة نفسها صباح اليوم التالي.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== 7) الحجز ===================== -->
+<section class="section book" id="book">
+  <div class="container">
+    <div class="book__box glass reveal">
+      <div>
+        <span class="eyebrow">الحجز</span>
+        <h2>احجز مكانك تحت النجوم</h2>
+        <p>اترك بياناتك ونتواصل معك لتأكيد الموعد وعدد الأفراد.</p>
+        <!-- ===== بيانات التواصل: عدّل الهاتف ورقم واتساب هنا ===== -->
+        <div class="book__contact">
+          <a href="tel:+201000000000"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.500 1.500a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg><span class="ltr">+20 100 000 0000</span></a>
+          <a href="https://wa.me/201000000000" target="_blank" rel="noopener"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-13.500 7.800L3 21l1.200-4.500A9 9 0 1 1 21 12z"/></svg>تواصل عبر واتساب</a>
+        </div>
+      </div>
+      <!-- النموذج لا يرسل لأي خادم حالياً — اربطه بخدمتك داخل دالة الإرسال في الأسفل -->
+      <form class="form" id="bookForm" novalidate>
+        <div class="field">
+          <label for="name">الاسم</label>
+          <input id="name" name="name" type="text" autocomplete="name" aria-describedby="nameErr" required>
+          <div class="field__error" id="nameErr">من فضلك اكتب اسمك (حرفان على الأقل).</div>
+        </div>
+        <div class="field">
+          <label for="phone">رقم الهاتف</label>
+          <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" aria-describedby="phoneErr" required>
+          <div class="field__error" id="phoneErr">اكتب رقم هاتف صحيحاً.</div>
+        </div>
+        <div class="field">
+          <label for="trip">الرحلة</label>
+          <select id="trip" name="trip" aria-describedby="tripErr" required>
+            <option value="">اختر الرحلة</option>
+            <option>ليلة الجبّار</option>
+            <option>درب التبّانة</option>
+            <option>ليلة الشهب</option>
+          </select>
+          <div class="field__error" id="tripErr">اختر الرحلة التي تريدها.</div>
+        </div>
+        <button class="btn btn--gold btn--block" type="submit">أرسل طلب الحجز</button>
+        <div class="form__success" id="formSuccess" role="status" aria-live="polite">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg>
+          <span>تم استلام طلبك، وسنتواصل معك لتأكيد الحجز.</span>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== 8) التذييل ===================== -->
+<footer class="footer">
+  <div class="container footer__grid">
+    <div>
+      <a class="logo" href="#home" aria-label="سُهيل — العودة لأعلى الصفحة">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2 7.500L21.500 12 14 14.500 12 22l-2-7.500L2.500 12 10 9.500z"/></svg>
+        <span>سُهيل</span>
+      </a>
+      <p>ليالي تخييم ورصد نجوم في الصحراء، بعيداً عن أضواء المدن.</p>
+    </div>
+    <nav aria-label="روابط سريعة">
+      <h3>روابط سريعة</h3>
+      <ul class="footer__links">
+        <li><a href="#trips">الرحلات</a></li>
+        <li><a href="#night">ليلتك معنا</a></li>
+        <li><a href="#faq">الأسئلة الشائعة</a></li>
+        <li><a href="#book">الحجز</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h3>تابعنا</h3>
+      <!-- روابط السوشيال: ضع روابط حساباتك مكان # -->
+      <div class="social">
+        <a href="#" aria-label="فيسبوك"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9V7c0-1 .3-1.500 1.600-1.500H17V2h-2.600C11.300 2 10 3.800 10 6.600V9H7.500v3.500H10V22h4v-9.500h2.700L17 9z"/></svg></a>
+        <a href="#" aria-label="إنستغرام"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.500" cy="6.500" r="1" fill="currentColor" stroke="none"/></svg></a>
+        <a href="#" aria-label="تيك توك"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 3c.3 2.300 1.700 3.800 4 4v3.200c-1.500 0-2.800-.4-4-1.200v6.200A5.800 5.800 0 1 1 10.200 9.400h.8v3.300a2.600 2.600 0 1 0 1.800 2.500V3z"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container footer__bottom-inner">
+      <span>© <span id="year"></span> سُهيل. جميع الحقوق محفوظة.</span>
+      <!-- توقيع المصمم: DIMA Digital Studio (الشعار مضمّن كـ base64) -->
+      <span class="credit">
+        <span>تصميم وتطوير</span>
+        <a class="credit__pill" href="https://wa.me/201202028373?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7%20%D8%AF%D9%8A%D9%85%D8%A7%20%D8%AF%D9%8A%D8%AC%D9%8A%D8%AA%D8%A7%D9%84%20%D8%B3%D8%AA%D9%88%D8%AF%D9%8A%D9%88%D8%8C%20%D8%B4%D9%81%D8%AA%20%D8%B4%D8%BA%D9%84%D9%83%D9%85%20%D8%B9%D9%84%D9%89%20%D8%B5%D9%81%D8%AD%D8%A9%20%D8%A7%D9%84%D9%87%D8%A8%D9%88%D8%B7%20%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9%20%D9%88%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B9%D9%85%D9%84%20%D9%85%D9%88%D9%82%D8%B9%2F%D9%85%D8%AA%D8%AC%D8%B1." target="_blank" rel="noopener" aria-label="DIMA Digital Studio – تواصل على واتساب">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#25d366" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 0 1-13.500 7.800L3 21l1.200-4.500A9 9 0 1 1 21 12z"/></svg>
+          <img src="data:image/png;base64,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" alt="DIMA Digital Studio" width="67" height="24">
+        </a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="العودة لأعلى الصفحة">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5M6 11l6-6 6 6"/></svg>
+</button>
+
+<script>
+(function () {
+  'use strict';
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function $(s, c) { return (c || document).querySelector(s); }
+  function $$(s, c) { return Array.prototype.slice.call((c || document).querySelectorAll(s)); }
+
+  $('#year').textContent = new Date().getFullYear();
+
+  /* ---------- قائمة الموبايل ---------- */
+  var nav = $('#nav'), menuBtn = $('#menuToggle');
+  function setMenu(open) {
+    nav.classList.toggle('is-open', open);
+    menuBtn.setAttribute('aria-expanded', String(open));
+    menuBtn.setAttribute('aria-label', open ? 'إغلاق القائمة' : 'فتح القائمة');
+  }
+  menuBtn.addEventListener('click', function () { setMenu(!nav.classList.contains('is-open')); });
+  $$('a', nav).forEach(function (a) { a.addEventListener('click', function () { setMenu(false); }); });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && nav.classList.contains('is-open')) { setMenu(false); menuBtn.focus(); }
+  });
+
+  /* ---------- سماء النجوم (canvas) ---------- */
+  var hero = $('#home'), canvas = $('#sky'), ctx = canvas.getContext('2d');
+  var W = 0, H = 0, stars = [], shot = null, nextShot = 2500, running = false, heroVisible = true;
+  function sizeSky() {
+    var dpr = Math.min(window.devicePixelRatio || 1, 2);
+    W = canvas.clientWidth; H = canvas.clientHeight;
+    canvas.width = Math.round(W * dpr); canvas.height = Math.round(H * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    var n = Math.min(420, Math.round(W * H / 2600));
+    stars = [];
+    for (var i = 0; i < n; i++) {
+      stars.push({ x: Math.random() * W, y: Math.pow(Math.random(), 1.4) * H * 0.9, r: Math.random() * 1.2 + 0.25,
+        p: Math.random() * 6.28, s: Math.random() * 1.4 + 0.4, warm: Math.random() < 0.14 });
+    }
+  }
+  function drawSky(t) {
+    ctx.clearRect(0, 0, W, H);
+    for (var i = 0; i < stars.length; i++) {
+      var st = stars[i];
+      ctx.globalAlpha = reduce ? 0.85 : 0.3 + 0.7 * Math.abs(Math.sin(st.p + t * 0.001 * st.s));
+      ctx.fillStyle = st.warm ? '#ffd9a0' : '#ffffff';
+      ctx.beginPath(); ctx.arc(st.x, st.y, st.r, 0, 6.2832); ctx.fill();
+    }
+    if (shot) {
+      shot.life -= 16;
+      shot.x += shot.vx; shot.y += shot.vy;
+      var a = Math.max(shot.life / 900, 0);
+      var g = ctx.createLinearGradient(shot.x, shot.y, shot.x - shot.vx * 14, shot.y - shot.vy * 14);
+      g.addColorStop(0, 'rgba(255,255,255,' + a + ')'); g.addColorStop(1, 'rgba(255,255,255,0)');
+      ctx.globalAlpha = 1; ctx.strokeStyle = g; ctx.lineWidth = 2; ctx.lineCap = 'round';
+      ctx.beginPath(); ctx.moveTo(shot.x, shot.y); ctx.lineTo(shot.x - shot.vx * 14, shot.y - shot.vy * 14); ctx.stroke();
+      if (shot.life <= 0) shot = null;
+    }
+    ctx.globalAlpha = 1;
+  }
+  function loop(t) {
+    if (!running) return;
+    if (!shot && t > nextShot) {
+      shot = { x: W * (0.25 + Math.random() * 0.7), y: H * Math.random() * 0.3, vx: -(5 + Math.random() * 4), vy: 2.5 + Math.random() * 2, life: 900 };
+      nextShot = t + 3500 + Math.random() * 5000;
+    }
+    drawSky(t);
+    requestAnimationFrame(loop);
+  }
+  function setRunning() {
+    var should = heroVisible && !document.hidden && !reduce;
+    if (should && !running) { running = true; requestAnimationFrame(loop); }
+    else if (!should) running = false;
+  }
+  sizeSky(); drawSky(0);
+  var resizeT;
+  window.addEventListener('resize', function () { clearTimeout(resizeT); resizeT = setTimeout(function () { sizeSky(); drawSky(0); }, 150); });
+  document.addEventListener('visibilitychange', setRunning);
+
+  /* ---------- بارالاكس الكثبان + حالة الشريط + زر الأعلى ---------- */
+  var header = $('#header'), toTop = $('#toTop'), layers = $$('.dunes svg[data-depth]'), ticking = false;
+  function onScroll() {
+    var y = window.scrollY;
+    header.classList.toggle('is-scrolled', y > 10);
+    toTop.classList.toggle('is-shown', y > 700);
+    if (!reduce && y < window.innerHeight * 1.2) {
+      layers.forEach(function (l) { l.style.transform = 'translate3d(0,' + (y * parseFloat(l.dataset.depth)).toFixed(1) + 'px,0)'; });
+    }
+    ticking = false;
+  }
+  window.addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(onScroll); } }, { passive: true });
+  onScroll();
+  toTop.addEventListener('click', function () { window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' }); });
+
+  /* ---------- ميلان البطاقة الزجاجية مع الماوس ---------- */
+  var ticket = $('#ticket');
+  if (!reduce && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    ticket.parentElement.addEventListener('pointermove', function (e) {
+      var r = ticket.getBoundingClientRect();
+      var px = (e.clientX - r.left) / r.width, py = (e.clientY - r.top) / r.height;
+      ticket.style.transform = 'rotateY(' + ((px - 0.5) * 12).toFixed(2) + 'deg) rotateX(' + ((0.5 - py) * 10).toFixed(2) + 'deg)';
+      ticket.style.setProperty('--mx', (px * 100).toFixed(1) + '%');
+      ticket.style.setProperty('--my', (py * 100).toFixed(1) + '%');
+    });
+    ticket.parentElement.addEventListener('pointerleave', function () { ticket.style.transform = ''; });
+  }
+
+  /* ---------- العدّادات ---------- */
+  function fmt(n) { return n.toLocaleString('en-US'); }
+  function runCounter(el) {
+    var target = +el.dataset.target, suffix = el.dataset.suffix || '';
+    if (reduce) { el.textContent = fmt(target) + suffix; return; }
+    var start = null;
+    function step(ts) {
+      if (start === null) start = ts;
+      var p = Math.min((ts - start) / 1800, 1);
+      el.textContent = fmt(Math.round(target * (1 - Math.pow(1 - p, 3)))) + suffix;
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  /* ---------- الظهور عند التمرير ---------- */
+  var reveals = $$('.reveal'), counters = $$('.stat__num');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('is-visible'); io.unobserve(en.target); } });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(function (el) { io.observe(el); });
+    var cio = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { if (en.isIntersecting) { runCounter(en.target); cio.unobserve(en.target); } });
+    }, { threshold: 0.5 });
+    counters.forEach(function (el) { cio.observe(el); });
+    new IntersectionObserver(function (entries) { heroVisible = entries[0].isIntersecting; setRunning(); }).observe(hero);
+  } else {
+    reveals.forEach(function (el) { el.classList.add('is-visible'); });
+    counters.forEach(function (el) { el.textContent = fmt(+el.dataset.target) + (el.dataset.suffix || ''); });
+    setRunning();
+  }
+
+  /* ---------- الأكورديون ---------- */
+  $$('.faq__q').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var item = btn.closest('.faq__item'), open = !item.classList.contains('is-open');
+      $$('.faq__item.is-open').forEach(function (o) { o.classList.remove('is-open'); $('.faq__q', o).setAttribute('aria-expanded', 'false'); });
+      item.classList.toggle('is-open', open);
+      btn.setAttribute('aria-expanded', String(open));
+    });
+  });
+
+  /* ---------- نموذج الحجز ---------- */
+  var form = $('#bookForm'), success = $('#formSuccess');
+  var rules = {
+    name: function (v) { return v.trim().length >= 2; },
+    phone: function (v) { return /^[0-9٠-٩]{8,15}$/.test(v.replace(/[\s\-()+]/g, '')); },
+    trip: function (v) { return v !== ''; }
+  };
+  function validate(input) {
+    var ok = rules[input.name](input.value);
+    input.closest('.field').classList.toggle('has-error', !ok);
+    input.setAttribute('aria-invalid', String(!ok));
+    return ok;
+  }
+  Object.keys(rules).forEach(function (n) {
+    var input = form.elements[n];
+    input.addEventListener('blur', function () { if (input.value) validate(input); });
+    input.addEventListener('input', function () { if (input.closest('.field').classList.contains('has-error')) validate(input); success.classList.remove('is-shown'); });
+  });
+  /* أزرار «احجز» في بطاقات الرحلات تختار الرحلة تلقائياً */
+  $$('[data-trip]').forEach(function (a) { a.addEventListener('click', function () { form.elements.trip.value = a.dataset.trip; }); });
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var bad = null;
+    Object.keys(rules).forEach(function (n) { var i = form.elements[n]; if (!validate(i) && !bad) bad = i; });
+    if (bad) { bad.focus(); return; }
+    /* هنا مكان ربط الإرسال الفعلي (مثلاً fetch إلى خادمك أو فتح واتساب) */
+    form.reset();
+    success.classList.add('is-shown');
+  });
+})();
+</script>
+</body>
+</html>

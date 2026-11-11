@@ -1,49 +1,63 @@
-# Arabic RTL Landing Page — صفحة هبوط عربية في ملف واحد
+# Arabic Landing Pages — قوالب صفحات هبوط عربية مجانية، ومعها البرومبت
 
-**[Live demo — المعاينة الحية](https://a7aadly1987-hub.github.io/arabic-landing-page/)**
+قوالب صفحات هبوط عربية (RTL)، كل قالب **ملف HTML واحد**: بدون مكتبات، بدون خطوات بناء، وبدون صور خارجية. ومع كل قالب **البرومبت** الذي يبني مثله في Claude لنشاطك أنت.
 
-[![Preview](preview/desktop.png)](https://a7aadly1987-hub.github.io/arabic-landing-page/)
+Free Arabic (RTL) landing page templates. Each one is a **single HTML file** with no frameworks, no build step and no external images, and each ships with the **prompt** to build your own version with Claude.
 
-## النسخ المتاحة — Demos
+[![Suhail preview](preview/suhail.png)](https://a7aadly1987-hub.github.io/arabic-landing-page/suhail/)
 
-| النسخة | المعاينة |
+## القوالب — Templates
+
+| القالب | المعاينة | الملف | البرومبت |
+| --- | --- | --- | --- |
+| **سُهيل** — سماء ونجوم سينمائية · Cinematic night sky | [Live](https://a7aadly1987-hub.github.io/arabic-landing-page/suhail/) | [`suhail/index.html`](suhail/index.html) | [suhail-night-sky.md](prompts/suhail-night-sky.md) |
+| **ميزان** — مكتب محاماة · Law office | [Live](https://a7aadly1987-hub.github.io/arabic-landing-page/law/) | [`law/index.html`](law/index.html) | [business-landing.md](prompts/business-landing.md) |
+| **نَسَق** — استوديو تصميم · Design studio | [Live](https://a7aadly1987-hub.github.io/arabic-landing-page/) | [`index.html`](index.html) | [business-landing.md](prompts/business-landing.md) |
+
+| ميزان | نَسَق |
 | --- | --- |
-| استوديو تصميم «نَسَق» — Design studio | [Live](https://a7aadly1987-hub.github.io/arabic-landing-page/) · `index.html` |
-| مكتب محاماة «ميزان» — Law office | [Live](https://a7aadly1987-hub.github.io/arabic-landing-page/law/) · `law/index.html` |
+| [![Law office preview](preview/law.png)](https://a7aadly1987-hub.github.io/arabic-landing-page/law/) | [![Design studio preview](preview/desktop.png)](https://a7aadly1987-hub.github.io/arabic-landing-page/) |
 
-[![Law office preview](preview/law.png)](https://a7aadly1987-hub.github.io/arabic-landing-page/law/)
-
-صفحة هبوط عربية (RTL) كاملة في ملف `index.html` واحد: بدون مكتبات، بدون خطوات بناء، وبدون صور خارجية. افتح الملف في المتصفح وسيعمل مباشرة.
-
-A complete Arabic (RTL) business landing page in a single `index.html`: no frameworks, no build step, no external images. Open the file and it works.
-
-> **ملاحظة:** «نَسَق» و«ميزان» اسمان افتراضيان للعرض فقط. الأرقام والشهادات وبيانات التواصل والمشاريع كلها محتوى تجريبي يُستبدل ببيانات صاحب الموقع.
+> **ملاحظة:** «سُهيل» و«ميزان» و«نَسَق» أسماء افتراضية للعرض فقط. الأرقام والأسعار والشهادات وبيانات التواصل كلها محتوى تجريبي يُستبدل ببيانات صاحب الموقع.
 >
-> **Note:** "Nasaq" and "Mizan" are fictional businesses used for the demos. All numbers, testimonials, contact details and projects are placeholder content.
+> **Note:** all three businesses are fictional. Numbers, prices, testimonials and contact details are placeholder content.
 
-## المزايا — Features
+## طريقتان للاستخدام — Two ways to use
 
-- عشرة أقسام: شريط تنقل ثابت، Hero، من نحن مع عدّادات متحركة، الخدمات، لماذا نحن، معرض الأعمال، آراء العملاء، أسئلة شائعة (أكورديون)، نموذج تواصل، تذييل
-- وضع فاتح وداكن مع حفظ الاختيار
-- متجاوب مع الموبايل والتابلت والديسكتوب، مع قائمة همبرغر
-- حركات ظهور عند التمرير عبر `IntersectionObserver`، مع احترام `prefers-reduced-motion`
-- نموذج تواصل بتحقق من المدخلات (اسم، إيميل أو هاتف، رسالة)
-- إمكانية وصول: HTML دلالي، تنقل كامل بلوحة المفاتيح، `aria` وحالات focus واضحة
-- كل الرسومات SVG مضمّنة وأشكال CSS
+**1. خذ الملف وعدّله:** حمّل ملف القالب، افتحه في أي محرر، وغيّر النصوص. كل قسم يبدأ بتعليق مرقّم، والألوان متغيرات في `:root` أعلى الملف.
+
+**2. ابنِ نسختك بالبرومبت:** افتح ملف البرومبت من مجلد [`prompts/`](prompts), املأ بيانات نشاطك بين الأقواس، والصقه في Claude.
+
+Either download a template and edit the text, or open a prompt from [`prompts/`](prompts), fill in your business details and paste it into Claude.
+
+## ما في كل قالب — What every template has
+
+- ملف واحد يعمل بفتحه في المتصفح، بدون تثبيت
+- عربي RTL من الأساس، بخطوط Google عربية
+- متجاوب مع الموبايل والتابلت والديسكتوب، بدون تمرير أفقي
+- حركات ظهور عند التمرير، مع احترام `prefers-reduced-motion`
+- نموذج تواصل أو حجز بتحقق من المدخلات (لا يرسل لأي خادم؛ مكان الربط معلَّم في الكود)
+- إمكانية وصول: HTML دلالي، تنقل بلوحة المفاتيح، `aria` وحالات focus واضحة
 - وسوم SEO و Open Graph و favicon مضمّن
 
-Ten sections, light/dark theme with persistence, fully responsive, scroll-reveal animations, validated contact form, keyboard accessible, inline SVG only, vanilla HTML/CSS/JS.
+قالب «سُهيل» يضيف: نجوم وشهب على `canvas`، بارالاكس للكثبان، بطاقة زجاجية تميل مع الماوس، وكوكبة تُرسم عند الظهور. قالبا «ميزان» و«نَسَق» يضيفان وضعاً فاتحاً وداكناً مع حفظ الاختيار.
 
-## التخصيص — Customize
+## خارطة الطريق — Roadmap
 
-1. **الألوان:** عدّل المتغيرات في `:root` أعلى الـ CSS (`--primary`, `--accent` …) وقيم الوضع الداكن تحتها.
-2. **النصوص:** كل قسم يبدأ بتعليق مرقّم مثل `<!-- 4) الخدمات -->`.
-3. **بيانات التواصل:** ابحث عن تعليق «بيانات التواصل» وغيّر الهاتف والإيميل ورقم واتساب.
-4. **النموذج:** لا يرسل لأي خادم؛ اربطه بخدمتك في المكان المعلَّم داخل دالة الإرسال.
+- [ ] عيادة — Clinic
+- [ ] مطعم ومنيو — Restaurant & menu
+- [ ] عقارات — Real estate
+- [ ] متجر منتج واحد — Single-product store
+
+عندك مجال تريد قالباً له؟ افتح [Issue](https://github.com/a7aadly1987-hub/arabic-landing-page/issues) باسم المجال. والمساهمات مرحّب بها: قالب جديد = مجلد فيه `index.html` واحد + ملف برومبت.
+
+Want a template for another industry? Open an issue. Contributions welcome: one folder with a single `index.html`, plus its prompt.
 
 ## Author
 
 Ahmed Hendawy — [DIMA Digital Studio](https://github.com/a7aadly1987-hub)
+
+إذا أفادك المشروع، نجمة ⭐ تساعد غيرك على الوصول إليه.
 
 ## License
 
